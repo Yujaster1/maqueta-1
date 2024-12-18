@@ -1,0 +1,48 @@
+body { 
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #d31e1e;
+    border: 1px solid;
+}
+footer {
+    text-align: center;
+    padding: 70px;
+    color: white;
+    background-color: #d51c1c;
+    border: 1px solid;
+    position: relative;
+    
+}
+.container {
+    margin: 0 auto;
+
+}
+main {
+    display: flex;
+    flex: 1;
+}
+.left {
+    float: left;
+    height: 30%;
+    background-color: #468f3d;
+    padding: 200px;
+}
+.mid {
+    float: left;
+    height: 20%;
+    background-color: #2244a9;
+    padding: 200px;
+}
+
+.right {
+    float: right;
+    height: 20%;
+    background-color: #84238f;
+    padding: 100px;
+}

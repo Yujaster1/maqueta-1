@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .menu, .content {
+            display: grid;
+            gap: 20px;
+        }
+        .menu {
+            grid-template-columns: 1fr 1fr; /* Dos columnas para el menú */
+            background-color: #e2e2e2;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .content {
+            grid-template-columns: 1fr 1fr 1fr; /* Tres columnas para el cuerpo */
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .item {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cabecera</h1>
+    </header>
+    <div class="menu">
+        <div class="item">Menú 1</div>
+        <div class="item">Menú 2</div>
+    </div>
+    <div class="content">
+        <div class="item">Cuerpo 1</div>
+        <div class="item">Cuerpo 2</div>
+        <div class="item">Cuerpo 3</div>
+    </div>
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+</body>
+</html>

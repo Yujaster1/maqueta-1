@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Cabecera, Cuerpo y Pie de Página</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>LABORATORIO DE COMPUTACIÓN INF 113</h2>
+            <H3>LABORATORIO DE DISEÑO Y JAVASCRIPT</H3>
+        </header>
+        <div class="logo">
+            <img src="C:/Users/andre/OneDrive/Escritorio/descarga.jpeg" alt="Logo" width="100">
+        </div>
+        <div class="main">
+            <div class="left">
+                <h2>Selecciona una Calculadora</h2>
+                <form>
+                    <label for="seleccion">Tipo de Calculadora:</label><br>
+                    <select id="seleccion" onchange="mostrarCalculadora()">
+                        <option value="">--Seleccione--</option>
+                        <option value="fibonacci">1 fibonacci</option>
+                        <option value="binarios">2 binarios</option> 
+                        <option value="factoriales">3 faltoriales</option>
+                        <option value="rotarDerecha">4 rotarDerecha</option>
+                        <option value="rotarIzquierda">4 rotarIzquierda</option>
+                        <option value="rotarParesDerecha">5 rotarParesDerecha</option>
+                        <option value="digitosRepetidos">6 digitosRepetidos</option>
+                        <option value="capicua">7 Verificar Capicúa</option>
+                        <option value="primo">8 Verificar Primo</option>
+                        <option value="generarPrimos">9 generarPrimos</option>
+                        <option value="exponencial">11 exponencial</option>
+                        <option value="palindromo">12 palindromo</option>
+                        <option value="invertirCadena">13 invertirCadena</option>
+                        <option value="suma">14 Calculadora de Suma</option>
+                        <option value="resta">14 Calculadora de resta</option>
+                        <option value="multiplicacion">14 Calculadora de multiplicacion</option>
+                        <option value="division">14 Calculadora de division</option>
+                        <option value="potencia">14 Calculadora de potencia</option>
+                        <option value="factorial">14 Calculadora de factorial</option>
+                        <option value="romanos">15 romanos</option>
+                        <option value="pascal">16 pascal</option>
+                        
+                        
+                        
+                        
+                        <!-- Puedes añadir más opciones aquí -->
+                    </select>
+                </form>
+            </div>
+            <div class="right" id="calculadora">
+                <p>Elige una calculadora del menú de la izquierda.</p>
+            </div>
+        </div>
+        <footer>
+            <p>NOMBRE: ARUQUIPA QUISPE ANDRES IVAN</p>
+        </footer>
+    </div>
+</body>
+</html>

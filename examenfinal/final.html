@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Cabecera, Cuerpo y Pie de Página</title>
+    <link rel="stylesheet" href="final.css">
+    <script src="final.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>EXAMEN FINAL INF 113</h2>
+            <H3>HTML5, CSS Y JAVASCRIPT</H3>
+        </header>
+        <div class="logo">
+            <img src="C:/Users/andre/OneDrive/Escritorio/descarga.jpeg" alt="Logo" width="100">
+        </div>
+        <div class="main">
+            <div class="left">
+                <h2>Selecciona una Calculadora</h2>
+                <form>
+                    <label for="seleccion">Tipo de Calculadora:</label><br>
+                    <select id="seleccion" onchange="mostrarCalculadora()">
+                        <option value="">--Seleccione--</option>
+                        <option value="factorialesPares">factorialesPares pregunta1</option>
+                        <option value="numerosPrimos">numerosPrimos pregunta 2</option>
+                        <option value="factorial">Calculador factorial pregunta 3</option>
+                        <option value="palindromo">palindromo pregunta 4</option>
+                        <option value="rotarParesDerecha">rotarParesDerecha pregunta 5</option>
+                        <option value="factorialess">factorialess pregunta optativa</option>
+                        <!-- Puedes añadir más opciones aquí -->
+                    </select>
+                </form>
+            </div>
+            
+            <div class="calculator"> 
+                <h2>Calculadora Básica pregunta 3</h2> 
+                <input type="text" id="display" readonly> 
+                <div class="buttons"> <button onclick="clearDisplay()">C</button> 
+                    <button onclick="appendToDisplay('/')">/</button> 
+                    <button onclick="appendToDisplay('*')">*</button> 
+                    <button onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay('**')">^</button>
+                    <button onclick="appendToDisplay('7')">7</button> 
+                    <button onclick="appendToDisplay('8')">8</button> 
+                    <button onclick="appendToDisplay('9')">9</button> 
+                    <button onclick="appendToDisplay('+')">+</button> 
+                    <button onclick="appendToDisplay('4')">4</button> 
+                    <button onclick="appendToDisplay('5')">5</button> 
+                    <button onclick="appendToDisplay('6')">6</button> 
+                    <button onclick="appendToDisplay('1')">1</button> 
+                    <button onclick="appendToDisplay('2')">2</button> 
+                    <button onclick="appendToDisplay('3')">3</button> 
+                    <button onclick="appendToDisplay('0')">0</button> 
+                    <button onclick="appendToDisplay('.')">.</button> 
+                    <button onclick="calculateResult()">=</button> 
+                </div> 
+            </div>
+            <div class="right" id="calculadora">
+                <p>Elige una calculadora del menú de la izquierda.</p>
+            </div>
+        </div>
+        <footer>
+            <p>NOMBRE: ARUQUIPA QUISPE ANDRES IVAN</p>
+        </footer>
+    </div>
+</body>
+</html>

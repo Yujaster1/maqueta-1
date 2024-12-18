@@ -1,0 +1,38 @@
+4 EjercicioJS:
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Documento sin título</title>
+    <script language="javascript" type="text/javascript">
+    function suma(){
+      n1=document.formu.op1.value;
+      n2=document.formu.op2.value;
+      x=parseFloat(n1);
+      y=parseFloat(n2);
+      s=x+y;
+      document.formu.re.value=s;
+    }
+    </script>
+</head>
+
+<body>
+<form action="" name="formu" method="post">
+    <table border="1">
+      <tr>
+        <td rowspan="3"><input type="button" name="calculo" onClick="suma();" value="Suma"></td>
+        <td>X</td>
+        <td><input type="text" name="op1"></td>
+      </tr>
+      <tr>
+        <td>Y</td>
+        <td><input type="text" name="op2"></td>
+      </tr>
+      <tr>
+        <td>Res</td>
+        <td><input type="text" name="re"></td>
+      </tr>
+    </table>
+</form>
+</body>
+</html>
